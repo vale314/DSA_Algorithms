@@ -110,3 +110,8 @@ int main()
     return 0;
 }
 // } Driver Code Ends
+
+
+// Valentin Alejandro Ruiz Ortiz
+
+// https://practice.geeksforgeeks.org/problems/quick-sort/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article

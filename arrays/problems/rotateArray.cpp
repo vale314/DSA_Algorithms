@@ -73,3 +73,8 @@ int main() {
 	return 0;
 }
 // } Driver Code Ends
+
+
+// https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
+
+// Valentin Alejandro Ruiz Ortiz

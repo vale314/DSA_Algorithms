@@ -37,6 +37,7 @@ using namespace std;
 
 //Function to find maximum sum contiguous subarray in a given set of integers
 
+//Solo obtiene el mayor de valores +
 int kadane(int nums[], int n)
 {
 	int max_global = 0; // Almacena en mayor maximo del sub-arr encontrado
@@ -56,10 +57,29 @@ int kadane(int nums[], int n)
     return max_global; // retornamos el maximo global
 }
 
+//Obtinene el mayor de numeros + y -
+int kadane_simplificado_positivos_negativos(int nums[], int n){
+    
+    int mayorCurrent = nums[0];
+    int mayorGlobal = nums[0];
+
+
+    for(int i = 0; i < n; i++){
+        
+        mayorCurrent = max(mayorCurrent + nums[i], nums[i]);
+        mayorGlobal = max(mayorCurrent, mayorGlobal);
+
+    }
+
+    return mayorGlobal;
+}
+
+
 int main()
 {
  	int arr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
  	int n = sizeof(arr)/sizeof(arr[0]);
- 	cout << "Maximum sum contiguous subarray is "<<kadane(arr, n);
+ 	// cout << "Maximum sum contiguous subarray is "<<kadane(arr, n);
+ 	cout << "Maximum sum contiguous subarray is "<<kadane_simplificado_positivos_negativos(arr, n)<<endl;
  	return 0;
 }

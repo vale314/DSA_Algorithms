@@ -66,8 +66,8 @@ int kadane_simplificado_positivos_negativos(int nums[], int n){
 
     for(int i = 0; i < n; i++){
         
-        mayorCurrent = max(mayorCurrent + nums[i], nums[i]);
-        mayorGlobal = max(mayorCurrent, mayorGlobal);
+        mayorCurrent = min(mayorCurrent + nums[i], nums[i]);
+        mayorGlobal = min(mayorCurrent, mayorGlobal);
 
     }
 
@@ -78,6 +78,8 @@ int kadane_simplificado_positivos_negativos(int nums[], int n){
 int main()
 {
  	int arr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
+ 	// int arr[] = {3, -4, 2, -3, -1, 7, -5};
+
  	int n = sizeof(arr)/sizeof(arr[0]);
  	// cout << "Maximum sum contiguous subarray is "<<kadane(arr, n);
  	cout << "Maximum sum contiguous subarray is "<<kadane_simplificado_positivos_negativos(arr, n)<<endl;

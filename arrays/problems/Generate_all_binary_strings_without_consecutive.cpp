@@ -28,6 +28,7 @@
 
 using namespace std;
 
+// Fibonacci - DP
 int solve(int n){
     
     vector<int> fib(n + 2, 0);
@@ -42,9 +43,27 @@ int solve(int n){
     return fib[n + 1];
 }
 
+// Recurrencia
+int solve(int prev,int n)
+	{
+	   if(n==0) return 0;
+	   if(n==1)
+	   {
+	       if(prev==0)
+	       return 2;
+	       if(prev==1)
+	       return 1;
+	   }
+	   if(prev==0)
+	   return solve(0,n-1)+solve(1,n-1);
+	   if(prev==1)
+	   return solve(0,n-1);
+	}
+
 int main()
 {
     int n; cin >> n;
+    // cout << solve(0, n) << endl;
     cout << solve(n) << endl;
 
     return 0;

@@ -1,0 +1,8 @@
+
+
+                        SubArray    SubString    SubSequence    SubSet
+        
+        Continuos       true        true           NO           NO
+
+        Order in        true        TRUE`          TRUE         NO
+        element

@@ -74,3 +74,7 @@ public:
         return ans;
     }
 };
+
+// Valentin Alejandro Ruiz Ortiz
+
+// https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/

@@ -62,3 +62,8 @@ public:
         return *max_element(dp, dp + nums.size());
     }
 };
+
+
+// Valentin Alejandro Ruiz Ortiz
+
+// https://leetcode.com/problems/longest-increasing-subsequence/description/

@@ -1,5 +1,8 @@
 /*
 
+    TIEMPO COMPUTACIONAL: O(N*5)
+    MEMORIA: O(1)
+
     Explicacion:
         dado un numero N, determinar cuales son las combinaciones posibles para ese numero
         con las vocales en orden.

@@ -20,7 +20,7 @@
 
             retornamos n (numero a buscar dentro de la secuencia)
 
-            Complejidad: O(N)
+            Complejidad: O(1)
             
             Espacio: O(N)
 

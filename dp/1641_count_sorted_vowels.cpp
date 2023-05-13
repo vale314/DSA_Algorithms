@@ -1,7 +1,7 @@
 /*
 
     TIEMPO COMPUTACIONAL: O(N*5)
-    MEMORIA: O(1)
+    MEM: 1
 
     Explicacion:
         dado un numero N, determinar cuales son las combinaciones posibles para ese numero
